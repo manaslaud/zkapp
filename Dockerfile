@@ -8,11 +8,6 @@ RUN apt update && apt install -y \
     jq \
     && apt clean && rm -rf /var/lib/apt/lists/*
 
-RUN mkdir -p /workspace
-
-# Declare /workspace as a persistent volume
-VOLUME ["/workspace"]
-
 # Set it as the default working directory
 WORKDIR /workspace
 
