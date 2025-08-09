@@ -1,0 +1,6 @@
+[package]
+name = "zkapp"
+type = "bin"
+authors = [""]
+
+[dependencies]
